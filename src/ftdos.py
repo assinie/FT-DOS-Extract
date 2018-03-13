@@ -559,7 +559,7 @@ def main():
             for fn in cat.keys():
                 if fnmatch.fnmatch(cat[fn]['stripped_name'], pattern):
                     raw = fs.read_file(fn)
-                    pprint(raw)
+                    # pprint(raw)
 
                     with open(cat[fn]['stripped_name'], 'wb') as output:
 
